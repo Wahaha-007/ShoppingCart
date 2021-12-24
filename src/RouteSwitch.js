@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useReducer, useState } from "react";
 import App from "./App";
 
@@ -64,7 +64,7 @@ const RouteSwitch = () => {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App num={getSumQty(cart)} />}>
           <Route index element={<Home />} />
@@ -74,7 +74,7 @@ const RouteSwitch = () => {
           <Route path="/cart" element={<Cart cart={cart} getSumPrice={getSumPrice} accessCart={accessCart} />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
