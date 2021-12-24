@@ -3,6 +3,7 @@ import { useReducer, useState } from "react";
 import App from "./App";
 
 import Home from "./routes/home";
+import Productindex from "./routes/productindex";
 import Products from "./routes/products";
 import Product from "./routes/product";
 import Contact from "./routes/contact";
@@ -69,7 +70,10 @@ const RouteSwitch = () => {
         <Route path="/" element={<App num={getSumQty(cart)} />}>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/products" element={<Products accessCart={accessCart} />} />
+          <Route path="/products" element={<Products />} >
+            <Route index element={<Productindex accessCart={accessCart} />} />
+            <Route path=":productId" element={<Product accessCart={accessCart} />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart cart={cart} getSumPrice={getSumPrice} accessCart={accessCart} />} />
         </Route>

@@ -1,0 +1,29 @@
+.pcontainer {
+    animation: fadeInAnimation ease 1s;
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.bigimg {
+    float: left;
+    border: solid 1px grey;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+}
+
+.ptext {
+    margin-top: 10px;
+}
+
+.pfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+    margin-right: 30px;
+}

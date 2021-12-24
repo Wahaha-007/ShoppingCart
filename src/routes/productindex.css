@@ -1,8 +1,5 @@
 .card {
     animation: fadeInAnimation ease 1s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     /*align-items: center;*/
     text-shadow: 2px 2px 4px black;
     text-align: center;
@@ -10,10 +7,12 @@
     border-width: 2px;
     border-color: black;
     border-radius: 10%;
-    padding: 50px;
-    width: 100px;
-    height: 200px;
+    padding: 10px;
+    width: 160px;
+    height: 260px;
     position: relative;
+    align-items: center;
+    line-height: 0.3;
 }
 
 .container {
@@ -22,6 +21,8 @@
     gap: 50px;
     flex-wrap: wrap;
     margin: 30px;
+    position: absolute;
+    top: 160px;
 }
 
 .card:hover {
@@ -38,4 +39,9 @@
     100% {
         opacity: 1;
     }
+}
+
+.smallimg {
+    height: 70%;
+    width: min-content;
 }

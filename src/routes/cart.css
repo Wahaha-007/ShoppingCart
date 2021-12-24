@@ -4,8 +4,11 @@
     text-align: center;
     text-shadow: 2px 2px 4px black;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    background-color: white;
+    z-index: 0;
+    height: 80px;
 }
 
 .summary h2 {
@@ -22,6 +25,12 @@
     border-color: black;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 160px;
+}
+
+.ebody {
+    padding-bottom: 240px;
 }
 
 td,
@@ -48,4 +57,9 @@ tr:nth-child(even) {
     100% {
         opacity: 1;
     }
+}
+
+.smallestimg {
+    height: 60px;
+    width: min-content;
 }
