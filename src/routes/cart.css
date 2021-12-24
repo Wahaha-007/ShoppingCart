@@ -1,0 +1,51 @@
+.summary {
+    border-top: solid 1px gray;
+    font-size: larger;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.summary h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tablemain {
+    animation: fadeInAnimation ease 1s;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-width: 4px;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+th,
+tr:nth-child(even) {
+    background-color: rgba(196, 183, 183, 0.9);
+}
+
+.checkout {
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
